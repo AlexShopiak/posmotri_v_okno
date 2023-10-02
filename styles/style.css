@@ -280,3 +280,10 @@ ol {
   top: 78px;
   left: 0;
 }
+
+.result__video-container > .error {
+  width: 712px;
+  height: 386px;
+  top: 78px;
+  left: 0;
+}
