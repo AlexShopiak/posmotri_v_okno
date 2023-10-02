@@ -53,6 +53,7 @@ ol {
   gap: 30px;
   width: 1140px;
   margin: auto;
+  position: relative;
 }
 
 .title {
@@ -210,7 +211,7 @@ ol {
 .search-form__textfield::-moz-placeholder {
   color: rgba(255, 255, 255, 0.70);
   font-size: 18px;
-  font-family: 'Fira Sans Condensed'', sans-serif
+  font-family: 'Fira Sans Condensed', sans-serif
 }
 
 .search-form__textfield:active {
@@ -269,13 +270,13 @@ ol {
 .content__list > .preloader {
   width: 400px;
   height: 300px;
-  top: 371px;
-  left: 867px;
+  top: 238px;
+  left: 740px;
 }
 
 .result__video-container > .preloader {
   width: 712px;
   height: 386px;
-  top: 211px;
-  left: 126px;
+  top: 78px;
+  left: 0;
 }
