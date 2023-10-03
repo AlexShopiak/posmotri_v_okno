@@ -51,9 +51,8 @@ ol {
 .content {
   display: flex;
   gap: 30px;
-  width: 1140px;
-  margin: auto;
   position: relative;
+  margin-left: 30px;
 }
 
 .title {
@@ -74,7 +73,7 @@ ol {
 }
 
 .content__details {
-  width: 399px;
+  width: 405px;
 }
 
 .search-form {
@@ -99,10 +98,13 @@ ol {
   flex-direction: column;
   height: 300px;
   width: 100%;
-  gap: 30px;
   margin-top: 26px;
   overflow: auto;
   padding-bottom: 4px;
+}
+
+.content__list > li:last-child {
+  margin-bottom: 0;
 }
 
 .content__list::-webkit-scrollbar {
@@ -114,6 +116,11 @@ ol {
   border-radius: 4px;
 }
 
+.content__video-card-description-container {
+  flex-grow: 1;
+  padding-top: 2px;
+}
+
 .content__video-card {
   display: flex;
   min-height: 103px;
@@ -122,7 +129,8 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  width: 187px;
+  max-width: 194px;
+  object-fit: cover;
 }
 
 .content__video-card-title {
@@ -138,7 +146,11 @@ ol {
   line-height: 16.2px;
 }
 
-.content__list-item:focus {
+.content__list-item {
+  margin-bottom: 30px;
+}
+
+.content__list-item:focus-visible {
   border: 1px solid #FFF;
 }
 
@@ -147,8 +159,13 @@ ol {
 }
 
 .content__card-link {
+  display: block;
   color: #fff;
   text-decoration: none;
+}
+
+.content__card-link_current {
+  background: #545050;
 }
 
 .content__card-link:hover {
@@ -173,14 +190,14 @@ ol {
   text-decoration: underline;
 }
 
-.button:focus {
+.button:focus-visible {
   outline: -webkit-focus-ring-color auto 1px;
   outline-offset: 2px;
 }
 
 .more-button {
   display: block;
-  width: 98%;
+  width: 100%;
   margin: auto;
 }
 
@@ -197,7 +214,6 @@ ol {
   border-left: 0;
   border-right: 0;
   height: 27px;
-  width: 245px;
   font-size: 18px;
   color: #FFFFFF;
 }
@@ -224,9 +240,8 @@ ol {
 
 .search-form__checkbox-list {
   display: flex;
-  gap: 15px;
+  gap: 13px;
   height: 27px;
-  padding-right: 22px;
 }
 
 .search-form__label {
@@ -234,6 +249,7 @@ ol {
   align-items: baseline;
   gap: 7px;
   cursor: pointer;
+  margin-left: 4px;
 }
 
 .search-form__label:hover > .search-form__label-text {
@@ -246,21 +262,20 @@ ol {
   height: 15px;
   outline: 1px solid #FFF;
   outline-offset: 2px;
-  position: relative;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox {
   background-color: #FFF;
 }
 
-.search-form__checkbox:focus + .search-form__pseudo-checkbox:after {
+.search-form__checkbox:focus-visible + .search-form__pseudo-checkbox:after {
   content: '';
-  position: absolute;
+  display: block;
   border: 1px solid #FFF;
   width: 66px;
   height: 26px;
-  top: -5px;
-  left: -5px;
+  margin-left: -5px;
+  margin-top: -5px;
 }
 
 .search-form__submit-button {
