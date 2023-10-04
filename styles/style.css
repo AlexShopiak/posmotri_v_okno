@@ -73,7 +73,8 @@ ol {
 }
 
 .content__details {
-  width: 405px;
+  flex-grow: 1;
+  padding-right: 20px;
 }
 
 .search-form {
@@ -150,7 +151,7 @@ ol {
   margin-bottom: 30px;
 }
 
-.content__list-item:focus-visible {
+.content__list-item:has(:focus-visible) {
   border: 1px solid #FFF;
 }
 
@@ -162,6 +163,8 @@ ol {
   display: block;
   color: #fff;
   text-decoration: none;
+  border: none;
+  outline: none;
 }
 
 .content__card-link_current {
@@ -268,6 +271,8 @@ ol {
   background-color: #FFF;
 }
 
+/*Я сдаюсь я не знаю как вторую рамку сделать с помощью flex justify-content и align-items*/
+/*У меня полигоны на работе горят с вашей yandexMap хватит меня мучать я не верстальщик:(*/
 .search-form__checkbox:focus-visible + .search-form__pseudo-checkbox:after {
   content: '';
   display: block;
