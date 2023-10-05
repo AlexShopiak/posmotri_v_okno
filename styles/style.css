@@ -52,7 +52,8 @@ ol {
   display: flex;
   gap: 30px;
   position: relative;
-  margin-left: 30px;
+  margin: auto;
+  width: 1140px;
 }
 
 .title {
@@ -74,7 +75,6 @@ ol {
 
 .content__details {
   flex-grow: 1;
-  padding-right: 20px;
 }
 
 .search-form {
@@ -175,6 +175,10 @@ ol {
   text-decoration: underline;
 }
 
+.content__card-link:focus {
+  outline: none;
+}
+
 .button {
   min-height: 34px;
   background: none;
@@ -193,10 +197,15 @@ ol {
   text-decoration: underline;
 }
 
+.button:focus {
+   outline: none;
+}
+
 .button:focus-visible {
   outline: -webkit-focus-ring-color auto 1px;
   outline-offset: 2px;
 }
+
 
 .more-button {
   display: block;
@@ -271,8 +280,6 @@ ol {
   background-color: #FFF;
 }
 
-/*Я сдаюсь я не знаю как вторую рамку сделать с помощью flex justify-content и align-items*/
-/*У меня полигоны на работе горят с вашей yandexMap хватит меня мучать я не верстальщик:(*/
 .search-form__checkbox:focus-visible + .search-form__pseudo-checkbox:after {
   content: '';
   display: block;
@@ -288,10 +295,10 @@ ol {
 }
 
 .content__list > .preloader {
-  width: 400px;
+  width: 405px;
   height: 300px;
   top: 238px;
-  left: 740px;
+  left: 736px;
 }
 
 .result__video-container > .preloader {
